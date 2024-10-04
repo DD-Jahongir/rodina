@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+    margin: 0;
+    font-family: Open Sans;
+    color:white;
+    background-color: black;
+}
+
+h1, p{
+    margin: 0;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    margin-right: 60px;
+    font-size: 18px;
+}
+
+h1{
+    font-size: 48px;
+    margin-bottom: 60px;
+}
+
+/* header */
+
+header{
+    padding-left: 70px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.header-inner{
+    display: flex;
+}
+
+.logoImg{
+    width: 180px;
+    height: 122px;
+    margin-right: 20px;
+}
+
+nav{
+    height: 122px;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    justify-content: right;
+    list-style: none; /*убираем маркеры списка*/
+    padding-left: 0; /*убираем левый отступ, равный 40px*/
+}
+/* posters */
+
+.posters{
+    background-color: black;
+    padding-top: 90px;
+}
+
+h2{
+    font-size: 48px;
+    margin-left: 270px;
+    margin-bottom: 60px;
+}
+
+.postersInner{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+.poster{
+    width: 300px;
+} 
+
+/* footer */
+footer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 70px;
+}
+.miniLogo{
+    width: 73px;
+    height: 43px;
+    float: left;
+    margin-right: 20px;
+}
+.textFooter {
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
+}
+.footerP{
+    color: #504D4D;
+    font-weight: 900;
+}
+span{
+    color: red;
+    font-size: 28px;
+}
+
+/*main*/
+
+.soulfoto{
+    width: 349px;
+    margin-right: 44px;
+}
+.mainclass{
+    display: flex;
+    padding: 80px;
+}
+.soultext{
+    width: 70%;
+}
+
+.section1{
+    background-image: url(img/bogatyr.jpeg);
+    background-repeat: no-repeat;
+    background-color: #000;
+    background-size: cover;
+    padding-left: 80px;
+    padding-top: 249px;
+    padding-bottom: 100px;
+}
+h2{
+    margin: 0;
+}
+.menu{
+    border: 3px dotted #fff;
+}
+.menu1{
+    border-left: 3px dotted #fff;
+}
+.movie{
+    width: 300px;
+    transition: transform 1s;
+}
+.movie:hover{
+    transform: scale(1.2);
+}
+
+nav a:hover{
+    color:red;
+}
+.before::before{
+    content: url(img/cinema.png);
+}
+.news{
+    display: flex;
+    flex-direction: column;
+    padding-left: 70px; 
+}
+input{
+    width: 450px;
+    margin-top: 5px;
+    height: 30px;
+}
+.tickets{
+    font-family: Open Sans;
+    padding: 5px;
+    background-color: red;
+    font-weight: 900;
+    margin-top: 5px;
+}
+.bron{
+    width: 149px;
+    font-family: Open Sans;
+    padding: 5px;
+    background-color: red;
+    font-weight: 900;
+    margin-top: 5px;
+}
+.lds-heart {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    transform: rotate(45deg);
+    transform-origin: 40px 40px;
+  }
+  .lds-heart div {
+    top: 32px;
+    left: 32px;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background: #fff;
+    animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  .lds-heart div:after,
+  .lds-heart div:before {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: #fff;
+  }
+  .lds-heart div:before {
+    left: -24px;
+    border-radius: 50% 0 0 50%;
+  }
+  .lds-heart div:after {
+    top: -24px;
+    border-radius: 50% 50% 0 0;
+  }
+  @keyframes lds-heart {
+    0% {
+      transform: scale(0.95);
+    }
+    5% {
+      transform: scale(1.1);
+    }
+    39% {
+      transform: scale(0.85);
+    }
+    45% {
+      transform: scale(1);
+    }
+    60% {
+      transform: scale(0.95);
+    }
+    100% {
+      transform: scale(0.9);
+    }
+  }
+  
